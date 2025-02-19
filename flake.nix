@@ -101,6 +101,9 @@
                   },
                   spec = {
                     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+                    { import = "lazyvim.plugins.extras.lang.rust" },
+                    { import = "lazyvim.plugins.extras.lang.nix" },
+                    { import = "lazyvim.plugins.extras.ui.mini-animate" },
                     -- The following configs are needed for fixing lazyvim on nix
                     -- force enable telescope-fzf-native.nvim
                     { "nvim-telescope/telescope-fzf-native.nvim", enabled = true },
@@ -108,7 +111,8 @@
                     { "williamboman/mason-lspconfig.nvim", enabled = false },
                     { "williamboman/mason.nvim", enabled = false },
                     -- uncomment to import/override with your plugins
-                    -- { import = "plugins" },
+                    { import = "plugins" },
+                    { import = "config.keymaps" },
                     -- put this line at the end of spec to clear ensure_installed
                     { "nvim-treesitter/nvim-treesitter", opts = function(_, opts) opts.ensure_installed = {} end },
                   },
