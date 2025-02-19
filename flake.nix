@@ -112,7 +112,6 @@
                     { "williamboman/mason.nvim", enabled = false },
                     -- uncomment to import/override with your plugins
                     { import = "plugins" },
-                    { import = "config.keymaps" },
                     -- put this line at the end of spec to clear ensure_installed
                     { "nvim-treesitter/nvim-treesitter", opts = function(_, opts) opts.ensure_installed = {} end },
                   },
